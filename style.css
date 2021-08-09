@@ -1,0 +1,305 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700;900&display=swap");
+
+:root {
+  --soft-red: hsl(7, 99%, 70%);
+  --yellow: hsl(51, 100%, 49%);
+  --dark-desaturated-cyan: hsl(167, 40%, 24%);
+  --dark-blue: hsl(198, 62%, 26%);
+  --dark-moderate-cyan: hsl(168, 34%, 41%);
+  --very-dark-desaturated-blue: hsl(212, 27%, 19%);
+  --very-dark-grayish-blue: hsl(213, 9%, 39%);
+  --dark-grayish-blue: hsl(232, 10%, 55%);
+  --grayish-blue: hsl(210, 4%, 67%);
+  --white: hsl(0, 0%, 100%);
+}
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default padding */
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* Remove list styles on ul, ol elements with a class attribute */
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+/* Natural flow and rhythm in articles by default */
+article > * + * {
+  margin-top: 1em;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+body {
+  font-family: "Barlow", sans-serif;
+  height: auto;
+  font-size: 1.125rem;
+}
+main {
+  margin: 0 auto;
+  max-width: 1440px;
+  width: 100%;
+  text-align: center;
+  box-shadow: 200px 0 40px rgba(0, 0, 0, 0.1), -30px 0 40px rgba(0, 0, 0, 0.1);
+}
+nav {
+  position: absolute;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: inherit;
+  padding: 2rem;
+  z-index: 1;
+}
+footer {
+  text-align: center;
+  margin: auto;
+  padding: 4rem 1rem;
+  background: var(--dark-moderate-cyan);
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--white);
+}
+
+.desktop-hidden {
+  display: block;
+}
+
+header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+header div {
+  position: absolute;
+  color: var(--white);
+  text-transform: uppercase;
+  top: 20vh;
+  font-family: "Fraunces", serif;
+  font-size: 42px;
+  letter-spacing: 3px;
+}
+.two-columns {
+  display: flex;
+  flex-wrap: wrap;
+}
+.two-columns > * {
+  flex: 1 1 21em;
+}
+.section-header div {
+  margin: 0 8rem;
+}
+.section-transform {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 4rem 2rem;
+}
+.section-transform h1 {
+  font-family: "Fraunces", serif;
+  font-size: 2.3rem;
+  line-height: 1;
+}
+.section-transform p {
+  color: var(--very-dark-grayish-blue);
+}
+.section-transform a {
+  text-transform: uppercase;
+  color: #000;
+  background: linear-gradient(to top, var(--yellow) 50%, transparent 50%);
+  width: 11ch;
+  font-family: "Fraunces", serif;
+  margin: 0 auto;
+}
+.position-relative {
+  position: relative;
+}
+.position-transform {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.nav-list__button {
+  background: var(--yellow);
+  border-radius: 50px;
+  color: #000;
+  padding: 0.6rem 1.6rem;
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+}
+.section-testimonials {
+  padding: 4rem 2rem;
+}
+.testimonials {
+  color: var(--very-dark-grayish-blue);
+  text-transform: uppercase;
+  font-family: "Fraunces", serif;
+  font-size: 1.125rem;
+  letter-spacing: 4px;
+  margin-bottom: 4rem;
+}
+.testimonials-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
+  margin-bottom: 4rem;
+}
+.testimonials-content {
+  color: var(--very-dark-grayish-blue);
+}
+.testimonials-name-font {
+  font-family: "Fraunces", serif;
+  font-weight: 900;
+}
+.testimonials-position-font {
+  font-size: 0.8rem;
+  color: var(--very-dark-grayish-blue);
+}
+.img-round {
+  border-radius: 50%;
+  width: 75px;
+  height: 75px;
+}
+.section-img {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-thumbnail--50 {
+  flex: 1 1 50%;
+}
+.nav-flex {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  color: var(--dark-desaturated-cyan);
+}
+footer > * {
+  margin-bottom: 3rem;
+}
+@media only screen and (max-width: 767px) {
+  .nav__container {
+    background: var(--white);
+    position: absolute;
+    top: 8rem;
+    left: 10%;
+    padding: 0 0 3rem !important;
+    display: flex;
+    width: 80%;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  .nav__container:before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 25px solid transparent;
+    border-right: 25px solid var(--white);
+    border-bottom: 25px solid transparent;
+    position: relative;
+    top: -25px;
+    right: -91.69%;
+  }
+  .nav__container a {
+    color: var(--very-dark-grayish-blue);
+  }
+}
+.mobile-hidden {
+  display: none;
+}
+.open {
+  display: flex;
+}
+
+@media only screen and (min-width: 768px) {
+  .desktop-hidden {
+    display: none;
+  }
+  .mobile-hidden {
+    display: block;
+  }
+  .row-reverse {
+    flex-direction: row-reverse;
+  }
+
+  .position-relative {
+    display: none;
+  }
+  .nav__container {
+    display: flex;
+    gap: 1.5rem;
+  }
+  .nav-list__button {
+    background: var(--white);
+  }
+  .testimonials-flex {
+    display: flex;
+  }
+  .img-round,
+  .testimonials-content {
+    margin-bottom: 4rem;
+  }
+  .img-thumbnail--50 {
+    flex: 1 0 0%;
+  }
+  .testimonials-card {
+    margin-right: 1rem;
+  }
+}
